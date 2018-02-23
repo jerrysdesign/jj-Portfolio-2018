@@ -1,13 +1,21 @@
 <template lang="pug">
   #app
+    TopNav
     router-view
 </template>
 
+
 <script>
+import TopNav from '@/components/TopNav'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    TopNav
+  }
 }
 </script>
+
 
 <style lang="scss">
 #app {
